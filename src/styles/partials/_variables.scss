@@ -1,0 +1,27 @@
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$grid-breakpoints: ( 
+    xs: 0, 
+    sm: 576px, 
+    md: 768px, 
+    lg: 992px, 
+    xl: 1200px,
+    xxl: 1440px, 
+    xxxl: 1792px 
+);
+
+$heading-sizes: (
+    h1: 51.96px,
+    h2: 46.18px,
+    h3: 36.49px,
+    h4: 28.83px,
+    h5: 25.63px,
+    h6: 20.25px,
+    h7: 16px,
+    h8: 14px,
+    h9: 12px,
+);
+
+$font-weights: (
+    400: 400,
+)

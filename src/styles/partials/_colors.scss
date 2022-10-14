@@ -1,0 +1,63 @@
+$white: #FFFFFF; // yes
+$gray-100:#F4F6F6;
+$gray-200: #EFEFEF;
+$gray-300: #E2E9EA;
+$gray-400: #B8BBBA;
+$gray-500: #948A85; // yes
+$gray-600: #6B7070;
+$gray-44: #707070;
+$primary: #4988C2;
+$secondary: #27251F;
+$success: #067F47;
+$info: #1274BF;
+$warning: #916603;
+$danger: #B13590;
+$greenseacolor: #20728b; // yes
+$pantone: #00a698;
+$zircon: #E8ECED;
+$deep-carmine: #C4F1C9;
+$active: #5DD3A2;
+$black: #000; // yes
+$spanish-roast: #111236; // yes
+$dark-cyan: #00887c;
+$ghost: #CDCDD7; // yes
+$dolphin: #68697f;
+$approx-comet: #444560;
+$selago: #F3F2F3;
+
+$color-array: (
+    pure-white: $white,
+    gray-100: $gray-100,
+    gray-200: $gray-200,
+    gray-300: $gray-300,
+    gray-400: $gray-400,
+    gray-500: $gray-500,
+    gray-600: $gray-600,
+    gray-44: $gray-44,
+    primary: $primary,
+    secondary: $secondary,
+    success: $success,
+    info: $info,
+    warning: $warning,
+    danger: $danger,
+    greenseacolor: $greenseacolor,
+    pantone: $pantone,
+    zircon: $zircon,
+    deep-carmine: $deep-carmine,
+    active: $active,
+    spanish-roast: $spanish-roast,
+    dark-cyan: $dark-cyan,
+    ghost: $ghost,
+    dolphin: $dolphin,
+    approx-comet: $approx-comet,
+    selago: $selago
+);
+
+@each $colorkey, $value in $color-array {
+    .color-#{$colorkey} {
+        color: #{$value} !important;
+    }
+    .bg-color-#{$colorkey} {
+        background-color: #{$value} !important;
+    }
+}

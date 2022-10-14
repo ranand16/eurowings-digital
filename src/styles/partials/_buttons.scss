@@ -1,0 +1,87 @@
+.btn {
+   padding: 0.8125rem 1.875rem !important;
+   background-color: $primary !important;
+   color: $white !important;
+   border-color: $primary !important;
+   line-height: initial !important;
+   font-weight: 500 !important;
+   font-family: $font-family-sans-serif;
+   letter-spacing: 0.03px;
+
+   &--only-icon {
+      padding: 0.6875rem 0.9375rem;
+      display: flex;
+   }
+
+   // &:focus:not(:disabled) {
+   //    @include focus-element;
+   // }
+
+   &:disabled {
+      opacity: 1;
+      background-color: $gray-100;
+      color: $gray-600;
+   }
+
+   &:active {
+      box-shadow: none;
+   }
+   &:hover{
+      text-decoration: none !important;
+   }
+
+   &:hover:not(:disabled) {
+      background-color: $deep-carmine !important;
+      border-color: $deep-carmine !important;
+   }
+
+   &:active:not(:disabled) {
+      background-color: $active;
+      border-color: $active;
+   }
+
+}
+
+// Secondary Button Styles
+.btn-outline-secondary {
+   border-radius: 0.25rem !important;
+   border: solid 0.0625rem $secondary !important;
+   padding: 0.8125rem 1.875rem !important;
+   line-height: initial !important;
+   font-weight: 500 !important;
+   letter-spacing: 0.03px;
+   font-family: $font-family-sans-serif;
+   &:hover:not(:disabled) {
+      border-color: $black;
+      background-color: $gray-300; 
+      color: $black;
+   }
+
+   &:active:not(:disabled) {
+      border-color: $black;
+      color: $black;
+      background-color: $gray-200;
+   }
+
+   &:disabled {
+      background-color: $white;
+      border-color: $gray-400;
+      color: $black;
+   }
+}
+
+.other-link{
+   color: $greenseacolor;
+   font-size: 1rem;
+   font-weight: 500 !important;
+   font-family:$font-family-sans-serif;
+   line-height: 1.5;
+   letter-spacing: 0.01px;
+   cursor: pointer;
+   &.other-link-login{
+      span{
+         margin: 0px;
+         font-size: 1.5rem;
+      }
+   }
+}

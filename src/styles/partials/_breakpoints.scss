@@ -1,0 +1,85 @@
+
+
+// min widths
+@mixin media-xxxl-min {
+    @media all and (min-width: map-get($grid-breakpoints, xxxl) + 1) {
+        @content;
+    }
+}
+@mixin media-xxl-min {
+    @media all and (min-width: map-get($grid-breakpoints, xxl) + 1) {
+        @content;
+    }
+}
+@mixin media-xl-min {
+    @media all and (min-width: map-get($grid-breakpoints, xl) + 1) {
+        @content;
+    }
+}
+
+@mixin media-lg-min {
+    @media all and (min-width: map-get($grid-breakpoints, lg) + 1) {
+        @content;
+    }
+}
+@mixin media-md-min {
+    @media all and (min-width: map-get($grid-breakpoints, md) + 1) {
+        @content;
+    }
+}
+
+@mixin media-sm-min {
+    @media all and (min-width: map-get($grid-breakpoints, sm) + 1) {
+        @content;
+    }
+}
+
+@mixin media-xs-min {
+    @media all and (min-width: map-get($grid-breakpoints, xs) + 1) {
+        @content;
+    }
+}
+
+
+// max widths
+@mixin media-xs-max {
+    @media all and (max-width: map-get($grid-breakpoints, xs)) {
+        @content;
+    }
+}
+
+@mixin media-sm-max {
+    @media all and (max-width: map-get($grid-breakpoints, sm)) {
+        @content;
+    }
+}
+
+@mixin media-md-max {
+    @media all and (max-width: map-get($grid-breakpoints, md)) {
+        @content;
+    }
+}
+
+@mixin media-lg-max {
+    @media all and (max-width: map-get($grid-breakpoints, lg)) {
+        @content;
+    }
+}
+
+@mixin media-xl-max {
+    @media all and (max-width: map-get($grid-breakpoints, xl)) {
+        @content;
+    }
+}
+
+@mixin media-xxl-max {
+    @media all and (max-width: map-get($grid-breakpoints, xxl)) {
+        @content;
+    }
+}
+
+@mixin media-xxxl-max {
+    @media all and (max-width: map-get($grid-breakpoints, xxxl)) {
+        @content;
+    }
+}
